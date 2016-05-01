@@ -73,7 +73,11 @@ class DebugExtensionTest extends \PHPUnit_Framework_TestCase
             $this->container->get($id);
             self::fail(sprintf('The "%s" service is available, but must not.'));
         } catch (\Exception $e) {
-            self::assertTrue($e instanceof ServiceNotFoundException);
+            self::assertTrue(
+                $e instanceof ServiceNotFoundException ||
+                // Handle "composer install --prefer-lowest"
+                $e instanceof \InvalidArgumentException
+            );
         }
 
         $this->extension->load($this->container, []);
