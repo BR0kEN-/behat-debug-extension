@@ -55,7 +55,6 @@ class DebugExtension implements Extension
      */
     public function configure(ArrayNodeDefinition $builder)
     {
-
     }
 
     /**
