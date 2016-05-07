@@ -11,6 +11,16 @@ Print any information you'd like to a command line during the test suite executi
 
 ## Usage
 
+Add `@debug` tag to your feature definition:
+
+```gherkin
+@debug
+Feature: Test
+
+  Scenario: Test
+  # ...
+```
+
 Add extension to your configuration file:
 
 ```yml
