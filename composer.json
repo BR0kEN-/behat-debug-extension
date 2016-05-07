@@ -1,6 +1,6 @@
 {
   "name": "behat/debug-extension",
-  "type": "library",
+  "type": "behat-extension",
   "description": "Debug Behat scenarios and print any information to command line",
   "keywords": ["services", "debug", "behat", "debugger"],
   "homepage": "https://github.com/BR0kEN-/behat-debug-extension",
