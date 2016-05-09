@@ -29,7 +29,7 @@ trait Debugger
         // Mark debug message.
         array_unshift($strings, '<question>DEBUG:</question>');
 
-        $_SESSION[__TRAIT__][] = new Message('comment', 4, $strings, $placeholders, false);
+        $_SESSION[__TRAIT__][] = new Message('comment', 4, $strings, $placeholders, (bool) getenv('BEHAT_DEBUG'));
     }
 
     /**

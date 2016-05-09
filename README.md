@@ -68,3 +68,11 @@ new \Behat\DebugExtension\Message('comment', 2, [
     'Read documentation for this class to know how to use it.',
 ]);
 ```
+
+### Programmatic usage
+
+```shell
+export BEHAT_DEBUG=true
+```
+
+This environment variable tells that messages should be printed in any way.
